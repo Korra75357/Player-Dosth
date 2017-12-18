@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#f012"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/welcome_to_player_dost"
+    android:layout_gravity="center"
+    android:background="#ffa500"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:id="@+id/UserEmail"
+        android:background="#ffa501"
+
+        />
+
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="20dp"
+    android:hint="@string/password"
+    android:inputType="textPassword"
+    android:id="@+id/Password"
+    android:background="#ffa501"
+
+    />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:onClick="LoginButton"
+        android:text="@string/login" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:background="#f012"
+    android:layout_margin="40dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:text="@string/new_to_player_dosth"
+        android:textColor="#f0e68c"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="signupbuttoncick"
+        android:text="@string/signup" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/about"
+        android:id="@+id/aboutButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+</LinearLayout>

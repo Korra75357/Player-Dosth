@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context="com.example.hp.play_signup.actualActivity">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:onClick="CompleteProfile"
+            android:text="@string/add_your_interests" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:onClick="CompleteProfile"
+            android:text="@string/find_a_player" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/edit_profile"
+            android:layout_gravity="center"
+            android:onClick="CompleteProfile"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/form_a_team"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:layout_gravity="center"
+            android:text="@string/organise_an_event"
+           />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/schedule_today"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/logout"
+            android:onClick="CompleteProfile"
+            android:layout_gravity="center"/>
+
+</LinearLayout>
+<!--add (1) WHO IS SIGNED IN AND A, (2) TOGGLE VIEW i,e A SHORTCUT-->

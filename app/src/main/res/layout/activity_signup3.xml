@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.play_signup.signup3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/which_indoor_games_you_play"
+        android:textColor="#9400d3"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkbox4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#dda0dd"
+        android:text="@string/carrom"
+        android:textColor="#000080"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/snooker"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox1"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/tennis_table"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox2"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/chess"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox3"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/volleyball"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox5"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/swimming"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox6"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/badminton"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox7"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/skating"
+        android:layout_marginTop="10dp"
+        android:id="@+id/checkbox8"
+        android:background="#dda0dd"
+        android:textColor="#000080"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="@string/click_next_to_select_other_hobbies"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#9400d3"/>
+
+    <Button
+        android:id="@+id/next_ind"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:onClick="signupbutton7"
+        android:text="@string/next" />
+</LinearLayout>
+
+

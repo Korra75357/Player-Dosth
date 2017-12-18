@@ -1,0 +1,43 @@
+
+{
+  "project_info": {
+    "project_number": "807723234552",
+    "firebase_url": "https://playerdosthhere.firebaseio.com",
+    "project_id": "playerdosthhere",
+    "storage_bucket": "playerdosthhere.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807723234552:android:1e9acbfd07374eb1",
+        "android_client_info": {
+          "package_name": "com.example.hp.play_signup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807723234552-irtvlaaqgcimu06hshc01hpvkpdbobtf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9A-SHmE8mrviDAbGKJe_UhvR40YggI1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
