@@ -44,16 +44,7 @@
         android:textColor="#000080"
         android:textSize="20sp"
         android:textStyle="bold"/>
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/skating"
-        android:layout_marginTop="5dp"
-        android:id="@+id/checkbox4"
-        android:background="#dda0dd"
-        android:textColor="#000080"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
+
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -105,22 +96,12 @@
         android:textColor="#000080"
         android:textSize="20sp"
         android:textStyle="bold"/>
-    <CheckBox
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="@string/other"
-        android:layout_marginTop="5dp"
-        android:id="@+id/checkbox10"
-        android:background="#dda0dd"
-        android:textColor="#000080"
-        android:textSize="20sp"
-        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/button_ok"
         android:layout_width="90dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:onClick="signupbuttonAct"
+        android:layout_marginTop="20dp"
         android:text="@string/ok" />
 </LinearLayout>

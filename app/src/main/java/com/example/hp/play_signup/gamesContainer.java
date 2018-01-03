@@ -4,27 +4,35 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ListView;
 
-public class gamesContainer extends AppCompatActivity {
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+public class gamesContainer extends AppCompatActivity implements View.OnClickListener {
+    private Button crickBUtton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_games_container);
+        crickBUtton=(Button)findViewById(R.id.cricket);
+        crickBUtton.setOnClickListener(this);
     }
+  /*  private void datashower() {
 
-    public void CompleteProfile(View k) {
-        if (k.getId() == R.id.button7) {
-            Intent z = new Intent(gamesContainer.this, signup2.class);
-            startActivity(z);
-            datashower();
-            //here signup2 is replaced by a scrolling activity which contains all related show data from fire base related to
+    }
+    public void Cricket (){
+
+    }*/
+
+    @Override
+    public void onClick(View view) {
+        if(view ==crickBUtton){
+
+            startActivity(new Intent(this,gamesShower.class));
         }
     }
-
-    private void datashower() {
-        //this method consists of a code to RETRIEVE DATA from fire base
-
-    }
-
 }

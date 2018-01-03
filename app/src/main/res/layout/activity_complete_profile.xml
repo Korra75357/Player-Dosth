@@ -15,15 +15,7 @@
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="#9400d3"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:hint="@string/enrollment_no"
-        android:inputType="number"
-        android:id="@+id/Enrolllment"
-        android:background="#ffa500"
-        />
+
 
     <EditText
         android:layout_width="match_parent"
@@ -56,7 +48,13 @@
         android:hint="@string/facebook_id"
         android:id="@+id/fb_id"
         />
-
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/programme_ex_b_tech_1st_year"
+        android:id="@+id/btechPro"
+        />
 
     <Button
         android:id="@+id/button_Add"
@@ -65,7 +63,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="8dp"
         android:background="#ff0000"
-        android:onClick="CompleteProfile"
         android:text="@string/add_data" />
 
 </LinearLayout>

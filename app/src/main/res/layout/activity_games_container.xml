@@ -7,23 +7,23 @@
     android:layout_height="match_parent"
     android:layout_width="wrap_content">
         <RelativeLayout
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_width="match_parent">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:text="Choose a Sport to Find  "
+                android:text="@string/choose_a_sport_to_find"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="#000"
                 android:id="@+id/tv0"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="OUTDOOR GAMES"
+                android:text="@string/outdoor_games"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -36,43 +36,48 @@
                 android:layout_below="@id/tv1"
                 android:id="@+id/cricket"
                 android:layout_marginLeft="30dp"
-                android:text="cricket"/>
+                android:text="@string/cricketFind" android:layout_marginStart="30dp" />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/tv1"
-                android:layout_alignLeft="@id/cricket"
-                android:layout_marginLeft="180dp"
-                android:layout_marginRight="30dp"
+               android:layout_toEndOf="@+id/cricket"
+                android:layout_toRightOf="@+id/cricket"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"
                 android:id="@+id/football"
-                android:text="football"
-                />
+                android:text="@string/footballFind"
+
+            />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/Hockey"
                 android:layout_marginLeft="30dp"
                 android:id="@+id/basketball"
-                android:text="basketball"
+                android:text="@string/basketballFind"
                 android:layout_marginTop="30dp"
-                />
+                android:layout_marginStart="30dp" />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/cricket"
                 android:layout_marginTop="30dp"
                 android:id="@+id/Hockey"
-                android:text="hockey"
-                android:layout_marginLeft="30dp"/>
+                android:text="@string/hockeyFind"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="10dp"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/football"
                 android:layout_marginTop="30dp"
                 android:id="@+id/tennis"
-                android:layout_alignLeft="@+id/Hockey"
-                android:layout_marginLeft="180dp"
-                android:text="hockey"
+                android:layout_toEndOf="@+id/Hockey"
+                android:layout_toRightOf="@+id/Hockey"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/tennis"
                />
             <Button
                 android:layout_width="140dp"
@@ -80,14 +85,16 @@
                 android:layout_below="@+id/Hockey"
                 android:layout_marginTop="30dp"
                 android:id="@+id/kabaddi"
-                android:layout_alignLeft="@+id/basketball"
-                android:layout_marginLeft="180dp"
-                android:text="kabaddi"/>
+                android:layout_toEndOf="@+id/basketball"
+               android:layout_toRightOf="@+id/basketball"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/kabaddiFind"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="INDOOR GAMES"
+                android:text="@string/indoor_games"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -99,38 +106,40 @@
                 android:layout_height="50dp"
                 android:layout_below="@id/tv2"
                 android:id="@+id/carrom"
-                android:text="carrom"
+                android:text="@string/carromFind"
                 android:layout_marginLeft="30dp"
-
-                />
+                android:layout_marginStart="30dp" />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/tv2"
-                android:layout_alignLeft="@id/carrom"
-                android:layout_marginLeft="180dp"
+                android:layout_toEndOf="@+id/carrom"
+                android:layout_toRightOf="@+id/carrom"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
                 android:id="@+id/snooker"
-                android:text="snooker"
-
+                android:text="@string/snookerFind"
                 />
-
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/carrom"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/volleyball"
-                android:text="volleyball"/>
+                android:text="@string/volleyballFind"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/snooker"
                 android:layout_marginTop="10dp"
                 android:id="@+id/tt"
-                android:layout_alignLeft="@+id/volleyball"
-                android:layout_marginLeft="180dp"
-                android:text="tabletennis"/>
+               android:layout_toEndOf="@+id/volleyball"
+                android:layout_toRightOf="@+id/volleyball"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/tabletennis"/>
 
             <Button
                 android:layout_width="140dp"
@@ -138,40 +147,46 @@
                 android:layout_below="@+id/volleyball"
                 android:layout_marginTop="5dp"
                 android:id="@+id/swimming"
-                android:text="swimming"
+                android:text="@string/swimmingFind"
+                android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/swimming"
                 android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/chess"
-                android:text="chess"
+                android:text="@string/chessFind"
                 />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-
                 android:layout_marginTop="5dp"
                 android:id="@+id/badminton"
-                android:layout_alignLeft="@+id/chess"
-                android:layout_marginLeft="180dp"
-                android:text="badminton"
+               android:layout_toEndOf="@+id/chess"
+                android:layout_toRightOf="@+id/chess"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/badmintonFind"
                 android:layout_below="@+id/swimming"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-                android:layout_alignLeft="@+id/swimming"
                 android:layout_below="@+id/tt"
                 android:layout_marginTop="5dp"
                 android:id="@+id/skating"
-                android:text="skating"
-                android:layout_marginLeft="180dp"/>
+                android:text="@string/skatingFind"
+                android:layout_toEndOf="@+id/swimming"
+                android:layout_toRightOf="@+id/swimming"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
-                android:text="ALL OTHER HOBBIES"
+                android:text="@string/all_other_hobbies"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textColor="#000"
@@ -183,16 +198,19 @@
                 android:layout_height="50dp"
                 android:layout_below="@id/tv3"
                 android:id="@+id/dance"
-                android:text="dance"
+                android:text="@string/danceFind"
+                android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/tv3"
-                android:layout_alignLeft="@id/dance"
-                android:layout_marginLeft="180dp"
+                android:layout_toEndOf="@id/dance"
+                android:layout_toRightOf="@+id/dance"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:id="@+id/music"
-                android:text="music"
+                android:text="@string/musicFind"
                 />
 
             <Button
@@ -201,17 +219,21 @@
                 android:layout_below="@+id/dance"
                 android:layout_marginTop="10dp"
                 android:id="@+id/finearts"
-                android:text="finearts"
-                android:layout_marginLeft="30dp"/>
+                android:text="@string/finearts"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/dance"
                 android:layout_marginTop="10dp"
                 android:id="@+id/athletics"
-                android:layout_alignLeft="@+id/finearts"
-                android:layout_marginLeft="180dp"
-                android:text="athletics"/>
+              android:layout_toEndOf="@+id/finearts"
+                android:layout_toRightOf="@+id/finearts"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/athleticsFind"/>
 
             <Button
                 android:layout_width="140dp"
@@ -219,33 +241,41 @@
                 android:layout_below="@+id/finearts"
                 android:layout_marginTop="5dp"
                 android:id="@+id/travelling"
-                android:text="travelling"
-                android:layout_marginLeft="30dp"/>
+                android:text="@string/travellingFind"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_below="@+id/finearts"
                 android:layout_marginTop="10dp"
                 android:id="@+id/computergames"
-                android:text="computer games"
-                android:layout_marginLeft="210dp"/>
+                android:text="@string/computer_gamesFind"
+                android:layout_toEndOf="@+id/travelling"
+                android:layout_toRightOf="@+id/travelling"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
                 android:layout_below="@id/computergames"
                 android:id="@+id/trecking"
-                android:text="trecking"
-                android:layout_marginLeft="210dp"
+                android:text="@string/treckingFind"
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="8dp"
                 />
             <Button
                 android:layout_width="140dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/travelling"
                 android:layout_marginTop="10dp"
                 android:id="@+id/watergames"
-                android:layout_marginLeft="30dp"
-                android:text="watergames"/>
+                android:layout_below="@+id/computergames"
+                android:layout_toRightOf="@+id/trecking"
+                android:layout_toEndOf="@+id/trecking"
+                android:text="@string/watergamesFind"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"/>
 </RelativeLayout>
         </ScrollView>
 

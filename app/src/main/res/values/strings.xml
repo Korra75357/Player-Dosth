@@ -66,6 +66,34 @@
     <string name="todo">TODO</string>
     <string name="logout">logout</string>
     <string name="emailid">Emailid</string>
+    <string name="email_id">Email Id</string>
+    <string name="programme_ex_btech_1st_year">programme (Ex. btech 1st year)</string>
+    <string name="programme_ex_b_tech_1st_year">Programme_Ex(Btech 1st year)</string>
+    <string name="choose_a_sport_to_find">Choose a Sport to Find</string>
+    <string name="outdoor_games">OUTDOOR GAMES</string>
+    <string name="cricketFind">cricket</string>
+    <string name="footballFind">football</string>
+    <string name="travellingFind">travelling</string>
+    <string name="computer_gamesFind">computer games</string>
+    <string name="treckingFind">trecking</string>
+    <string name="finearts">finearts</string>
+    <string name="danceFind">dance</string>
+    <string name="basketballFind">basketball</string>
+    <string name="swimmingFind">swimming</string>
+    <string name="hockeyFind">hockey</string>
+    <string name="kabaddiFind">kabaddi</string>
+    <string name="indoor_games">INDOOR GAMES</string>
+    <string name="carromFind">carrom</string>
+    <string name="tabletennis">tabletennis</string>
+    <string name="snookerFind">snooker</string>
+    <string name="volleyballFind">volleyball</string>
+    <string name="badmintonFind">badminton</string>
+    <string name="all_other_hobbies">ALL OTHER HOBBIES</string>
+    <string name="skatingFind">skating</string>
+    <string name="chessFind">chess</string>
+    <string name="musicFind">music</string>
+    <string name="athleticsFind">athletics</string>
+    <string name="watergamesFind">watergames</string>
 </resources><!--"Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
