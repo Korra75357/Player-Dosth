@@ -47,8 +47,8 @@ public class signup extends AppCompatActivity implements View.OnClickListener {
             btnAddData.setEnabled(false);
             return;
         }*/
-        if(TextUtils.isEmpty(Password)&&TextUtils.isEmpty(Email)){
-            Toast.makeText(this,"enter email and  password ",Toast.LENGTH_SHORT).show();
+        if(TextUtils.isEmpty(Password)||TextUtils.isEmpty(Email)){
+            Toast.makeText(this,"Please enter email and  password ",Toast.LENGTH_SHORT).show();
             return;
 
         }

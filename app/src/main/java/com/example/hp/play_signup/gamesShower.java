@@ -1,5 +1,6 @@
 package com.example.hp.play_signup;
 
+import android.nfc.Tag;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 //import com.firebase.ui.database.FirebaseListAdapter;
+import com.google.firebase.auth.UserInfo;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -20,29 +23,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class gamesShower extends AppCompatActivity {
-    // private ListView mListview;
-    String uid;
-    TextView tv;
+    private ArrayList<String> userInfo=new ArrayList<>();
     TextView tv1;
-    TextView tv2;
-    TextView tv3;
-    TextView tv4;
-    ListView list1;
+    ListView lv1;
     ArrayAdapter<String> adapter;
-    List<String> itemList;
-
+    ArrayList<UserInformation> userdata=new ArrayList<>();
+    String Rname;String Rbranch;String Rphone;String Rfbid; String Rprogramme;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shower_cricket);
-        itemList = new ArrayList<>();
 
-/*here apply FOR loop to get the values of id//
-        DatabaseReference pushedPlayerRef =FirebaseDatabase.getInstance().getReference().child("outdoor").child("cricket").push();
-        String userIdOnebyOne=IdReference.orderByKey()
-        String PlayerId = pushedPlayerRef.getKey();*/
-
-
+        tv1=(TextView)findViewById(R.id.textview1);
+        lv1=(ListView)findViewById(R.id.listView1);
+        final ArrayAdapter<String> arrayAdapter =new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line,userInfo);
+       lv1.setAdapter(arrayAdapter);
         DatabaseReference IdReference = FirebaseDatabase.getInstance().getReference().child("outdoor").child("cricket");//ref for all id's
         IdReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -52,26 +47,55 @@ public class gamesShower extends AppCompatActivity {
                     String userIdOnebyOne = contact.getValue(String.class);
                     DatabaseReference userReference = FirebaseDatabase.getInstance().getReference().child("users");//ref for data under users
                     //let we are getting id of cricket one by one and that let it be String userIdOnebyOne
-                    userReference.child(userIdOnebyOne).addValueEventListener(new ValueEventListener() {
+                   userReference.child(userIdOnebyOne).addValueEventListener(new ValueEventListener() {
                         @Override
                         public void onDataChange(DataSnapshot dataSnapshot1) {
                             UserInformation info = dataSnapshot1.getValue(UserInformation.class);
-                            String Rname = info.Name;
-                            String Rbranch = info.Branch;
-                            String Rphone = info.MobileNo;
-                            String Rfbid = info.FbId;
-                            String Rprogramme = info.Programme;
-                            Log.e("CHECKUSER NAME", "Name " + Rname);
-                            Log.d("contact:: ", "Name"+Rname);
+                          Rname = info.AName;
+                             Rbranch = info.Branch;
+                            Rphone = info.dMobileNo;
+                            Rfbid = info.eFbId;
+                           Rprogramme = info.cProgramme;
                         }
 
                         @Override
                         public void onCancelled(DatabaseError databaseError) {
                             Toast.makeText(gamesShower.this, "Failed to show data", Toast.LENGTH_SHORT).show();
                         }
+
+                    });
+
+                   userReference.child(userIdOnebyOne).addChildEventListener(new ChildEventListener() {
+                        @Override
+                        public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                            String values =dataSnapshot.getValue(String.class);
+                            userInfo.add(values);
+                            arrayAdapter.notifyDataSetChanged();
+                        }
+
+                        @Override
+                        public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+                        }
+
+                        @Override
+                        public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
                     });
                 }
             }
+
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
@@ -80,3 +104,4 @@ public class gamesShower extends AppCompatActivity {
         });
     }
 }
+//can show better data by using costum layout for scrpll views

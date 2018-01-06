@@ -5,22 +5,21 @@ package com.example.hp.play_signup;
  */
 
 public class UserInformation {
-    public String Name ;
+    public String AName ;
     public String Branch ;
-    public String MobileNo ;
-    public String Programme ;
-    public String FbId;
+    public String dMobileNo ;
+    public String cProgramme ;
+    public String eFbId;
    public  UserInformation (){
 
     }
 
     public UserInformation(String Name,String mobileNo,String branch ,String fbId,String programme) {
-        this.Name=Name;
-        this.MobileNo=mobileNo;
+        this.AName=Name;
+        this.dMobileNo=mobileNo;
         this.Branch = branch;
-        this.FbId=fbId;
-        this.Programme=programme;
+        this.eFbId=fbId;
+        this.cProgramme=programme;
     }
-
 }
 

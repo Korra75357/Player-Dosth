@@ -15,7 +15,6 @@ import com.google.firebase.database.FirebaseDatabase;
 public class signup2 extends AppCompatActivity implements View.OnClickListener {
      private CheckBox cb1,cb2,cb3,cb4,cb5,cb6;
      private Button outdoorSaveButton;
-    // private FirebaseDatabase firebaseDatabase;
      private FirebaseAuth firebaseAuth;
      private DatabaseReference databaseReference;
      private String userid;

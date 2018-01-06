@@ -21,12 +21,6 @@ public class gamesContainer extends AppCompatActivity implements View.OnClickLis
         crickBUtton=(Button)findViewById(R.id.cricket);
         crickBUtton.setOnClickListener(this);
     }
-  /*  private void datashower() {
-
-    }
-    public void Cricket (){
-
-    }*/
 
     @Override
     public void onClick(View view) {

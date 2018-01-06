@@ -18,7 +18,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signup2"></activity>
+        <activity android:name=".signup2" />
         <activity android:name=".signup">
             <intent-filter>
                 <action android:name="com.example.hp.play_signup.signup" />
@@ -26,15 +26,12 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".actualActivity"></activity>
-        <activity android:name=".signup3"></activity>
-        <activity android:name=".signup4"></activity>
-        <activity android:name=".completeProfile"></activity>
-        <activity android:name=".gamesContainer">
-        </activity>
-        <activity android:name=".gamesShower">
-
-        </activity>
+        <activity android:name=".actualActivity" />
+        <activity android:name=".signup3" />
+        <activity android:name=".signup4" />
+        <activity android:name=".completeProfile" />
+        <activity android:name=".gamesContainer"></activity>
+        <activity android:name=".gamesShower"></activity>
     </application>
 
 </manifest>

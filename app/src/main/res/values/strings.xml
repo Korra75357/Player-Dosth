@@ -94,6 +94,11 @@
     <string name="musicFind">music</string>
     <string name="athleticsFind">athletics</string>
     <string name="watergamesFind">watergames</string>
+    <string name="textview_1">TextView 1</string>
+    <string name="textview_2">TextView 2</string>
+    <string name="textview_3">TextView 3</string>
+    <string name="textview_4">TextView 4</string>
+    <string name="textview_5">TextView 5</string>
 </resources><!--"Material is the metaphor.\n\n"
 
         "A material metaphor is the unifying theory of a rationalized space and a system of motion."
